@@ -1,5 +1,5 @@
+"use strict";
 function solveEquation(a, b, c) {
-  "use strict";
   let arr = [];
   let D = Math.pow(b, 2) - 4 * a * c;
   if (D > 0) {
