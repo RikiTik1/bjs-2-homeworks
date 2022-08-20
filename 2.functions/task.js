@@ -54,3 +54,4 @@ function worker2(arr) {
   return Math.abs(max - min);
 };
 console.log(worker2([0, 0, 0], [-1, -99]));
+x
