@@ -64,15 +64,15 @@ class AlarmClock {
 
 function testCase(){
     let phoneAlarm = new AlarmClock();
-    phoneAlarm.addClock('14:54', () => console.log('Пора вставать'), 1);
-    phoneAlarm.addClock('14:55', () => {console.log('Пора вставать прямо сейчас'), phoneAlarm.removeClock(2)}, 2);
-    phoneAlarm.addClock('14:56', () => console.log('Вставай уже'));
-    phoneAlarm.addClock('14:57', () => {
+    phoneAlarm.addClock('15:03', () => console.log('Пора вставать'), 1);
+    phoneAlarm.addClock('15:04', () => {console.log('Пора вставать прямо сейчас'), phoneAlarm.removeClock(2)}, 2);
+    phoneAlarm.addClock('15:04', () => console.log('Вставай уже'));
+    phoneAlarm.addClock('15:05', () => {
         console.log('Вставай уже, а то проспишь'),
         phoneAlarm.clearAlarms();
         phoneAlarm.printAlarms();
     }, 3);
-    phoneAlarm.addClock('14:58', () => console.log('ПОДЪЁМ!!!'), 1);
+    phoneAlarm.addClock('15:06', () => console.log('ПОДЪЁМ!!!'), 1);
     phoneAlarm.printAlarms();
     phoneAlarm.start();
 };
